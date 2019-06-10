@@ -52,8 +52,14 @@ If you wish to work on the provider, you'll first need [Go](https://golang.org) 
 
 To compile the provider, run `make build`. This will build the provider and put the provider binary in the `$GOPATH/bin` directory.
 
+
 ```sh
+For Linux
 $ make build
+---
+For Windows
+$ go build -o terraform-provider-openstack
+$ go install github.com/terraform-providers/terraform-provider-openstack
 ...
 $ $GOPATH/bin/terraform-provider-openstack
 ...
